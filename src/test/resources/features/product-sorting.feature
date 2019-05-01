@@ -1,7 +1,7 @@
 Feature: Products sorting
   As a customer
   I want to sort products
-  So I can easily find what I need
+  So I can easily find what I need to find
 
   Scenario Outline: Sort products by price
     Given I open the homepage
