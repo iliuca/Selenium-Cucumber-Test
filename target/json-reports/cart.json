@@ -1,0 +1,576 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 12841930152,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Add products to cart",
+        "description": "",
+        "id": "cart;add-products-to-cart;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 904683513,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7566981585,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I open the homepage",
+            "match": {
+              "location": "HomePageSteps.iOpenTheHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3893397731,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I select one product",
+            "match": {
+              "location": "HomePageSteps.iSelectOneProduct()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 504766446,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I select color \"pink\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pink",
+                  "offset": 16
+                }
+              ],
+              "location": "SingleProductSteps.iSelectColor(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 337055261,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I select size \"S\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "S",
+                  "offset": 15
+                }
+              ],
+              "location": "SingleProductSteps.iSelectSize(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17864691940,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I press Add to cart",
+            "match": {
+              "location": "SingleProductSteps.iPressAddToCart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6147656954,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the product is added to cart",
+            "match": {
+              "location": "CartSteps.theProductIsAddedToCart()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4831879481,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Change number of products in cart",
+        "description": "",
+        "id": "cart;change-number-of-products-in-cart",
+        "after": [
+          {
+            "result": {
+              "duration": 906941736,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3536855794,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I open the homepage",
+            "match": {
+              "location": "HomePageSteps.iOpenTheHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2171043631,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I select one product",
+            "match": {
+              "location": "HomePageSteps.iSelectOneProduct()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1493631331,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I select one color",
+            "match": {
+              "location": "SingleProductSteps.iSelectOneColor()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 787547461,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I select one size",
+            "match": {
+              "location": "SingleProductSteps.iSelectOneSize()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15946312421,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I press Add to cart",
+            "match": {
+              "location": "SingleProductSteps.iPressAddToCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11049924911,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I press View Cart",
+            "match": {
+              "location": "HeaderSteps.iPressViewCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1088595150,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I change the number of items from 1 to 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 34
+                },
+                {
+                  "val": "3",
+                  "offset": 39
+                }
+              ],
+              "location": "CartSteps.iChangeTheNumberOfItemsFromTo(int,int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 14424433522,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I click update",
+            "match": {
+              "location": "CartSteps.iClickUpdate()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 144588953,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "the number of items in cart is updated",
+            "match": {
+              "location": "CartSteps.theNumberOfItemsInCartIsUpdated()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6839744818,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "Empty cart",
+        "description": "",
+        "id": "cart;empty-cart",
+        "after": [
+          {
+            "result": {
+              "duration": 749545666,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10879971947,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I open the homepage",
+            "match": {
+              "location": "HomePageSteps.iOpenTheHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2719766098,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I select one product",
+            "match": {
+              "location": "HomePageSteps.iSelectOneProduct()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 354255269,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I select one color",
+            "match": {
+              "location": "SingleProductSteps.iSelectOneColor()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 166495185,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I select one size",
+            "match": {
+              "location": "SingleProductSteps.iSelectOneSize()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14532088681,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I press Add to cart",
+            "match": {
+              "location": "SingleProductSteps.iPressAddToCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8209148982,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I press View Cart",
+            "match": {
+              "location": "HeaderSteps.iPressViewCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7840959485,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I press Empty Cart",
+            "match": {
+              "location": "CartSteps.iPressEmptyCart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 136011171,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "the cart is emptied",
+            "match": {
+              "location": "CartSteps.theCartIsEmptied()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3696366531,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 38,
+        "name": "Delete item from cart",
+        "description": "",
+        "id": "cart;delete-item-from-cart",
+        "after": [
+          {
+            "result": {
+              "duration": 915050184,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4949684422,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I open the homepage",
+            "match": {
+              "location": "HomePageSteps.iOpenTheHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2070454253,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "I select one product",
+            "match": {
+              "location": "HomePageSteps.iSelectOneProduct()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 133641393,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I select one color",
+            "match": {
+              "location": "SingleProductSteps.iSelectOneColor()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 131414725,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I select one size",
+            "match": {
+              "location": "SingleProductSteps.iSelectOneSize()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15212143206,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "I press Add to cart",
+            "match": {
+              "location": "SingleProductSteps.iPressAddToCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2820299476,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "I press VIP",
+            "match": {
+              "location": "HomePageSteps.iPressVIP()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2468491319,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "I select another product",
+            "match": {
+              "location": "ProductsGridSteps.iSelectAnotherProduct()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14799488356,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "I press Add to cart",
+            "match": {
+              "location": "SingleProductSteps.iPressAddToCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6772471454,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "I press View Cart",
+            "match": {
+              "location": "HeaderSteps.iPressViewCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15330287703,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "I press the Recycle bin simbol for one item",
+            "match": {
+              "location": "CartSteps.iPressTheRecycleBinSimbolForOneItem()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 533376681,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "the item I deleted is no longer in cart",
+            "match": {
+              "location": "CartSteps.theItemIDeletedIsNoLongerInCart()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Cart",
+    "description": "",
+    "id": "cart",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/cart.feature"
+  }
+]
